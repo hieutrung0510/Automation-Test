@@ -36,19 +36,26 @@ public class Guru99Test {
     
     @Test
     public void testLogin() throws InterruptedException{
+	
+	String usernameStr = "mngr392606";
+	String passStr = "ymEnYpY";
+	
 	WebElement username = myBrowser.findElement(By.xpath("//input[@name='uid']"));
-	username.sendKeys("mngr392606");
+	username.sendKeys(usernameStr);
 	
 	WebElement password = myBrowser.findElement(By.xpath("//input[@name='password']"));
-	password.sendKeys("ymEnYpY");
+	password.sendKeys(passStr);
 	
 	WebElement btnLogin = myBrowser.findElement(By.xpath("//input[@name='btnLogin']"));
 	btnLogin.click();
 	
 	Thread.sleep(3000);
 	
-	WebElement helloMessage = myBrowser.findElement(By.xpath("//td[normalize-space()='Manger Id : mngr392606']"));
-	assertEquals("Manger Id : mngr392606", helloMessage.getText());
+	
+	WebElement helloMessage = myBrowser.findElement(By.xpath("//tr[@class='heading3']//td"));
+	//bat den tag //td, get text ben trong chinh la chữ managerID : <username vừa gõ>
+	assertEquals("Manger Id : " + usernameStr, helloMessage.getText());
+	
     }
     
     @AfterAll

@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.hieutrung.selenium.guru99.Guru99Test
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.463 s - in com.hieutrung.selenium.guru99.Guru99Test
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 20.466 s <<< FAILURE! - in com.hieutrung.selenium.guru99.Guru99Test
+com.hieutrung.selenium.guru99.Guru99Test.testLogin  Time elapsed: 15.357 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=99.0.4844.74)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-TKCVSTT', ip: '192.168.1.172', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9fafde552ec5994935e0f3174c46985d, findElement {using=xpath, value=//tr[@class='heading3']//td}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.74, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\PC\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:58853}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58853/devtoo..., se:cdpVersion: 99.0.4844.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9fafde552ec5994935e0f3174c46985d
+	at com.hieutrung.selenium.guru99.Guru99Test.testLogin(Guru99Test.java:55)
+
